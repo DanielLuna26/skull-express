@@ -3,8 +3,11 @@ import { Router } from 'express'
 import users from './users'
 
 var router = Router()
-
+/**
+ * Router global
+ */
 router.use('/users', users)
+
 /* GET home page. */
 router.get('/', (req, res, next) => {
   res.json({ title: 'Express' })
